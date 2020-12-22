@@ -63,25 +63,36 @@
                     <div class="backdrop is-hidden" data-backdrop>
                     <div class="modal">
                         <button class="close-modal" data-close-modal></button>
-                        <form action="" autocomplete="on">
-                            <div>Оставьте свои данные, мы вам перезвоним</div>
+                        <form class="form-modal" action="" autocomplete="on">
+                            <div class="form-modal-title">Оставьте свои данные, мы вам перезвоним</div>
+                            <p class="form-field">
+                            <label class="form-label" for="name">Имя</label>
+                            <input class="form-input" type="text" name="name" id="name" placeholder=" svg "  />
+                            </p>
                             
-                            <label for="name">Имя</label>
-                            <input type="text" name="name" id="name"  />
+                            <p class="form-field">
+                            <label class="form-label" for="tel">Телефон</label> 
+                            <input class="form-input" type="tel" name="tel" id="tel" placeholder="change" >
+                            </p>
+                            
+                            <p class="form-field">
+                            <label class="form-label" for="email">Почта</label> 
+                            <input class="form-input" type="email" name="email" id="email" placeholder="change">
+                            </p>
 
-                            <label for="tel">Телефон</label> 
-                            <input type="tel" name="tel" id="tel" >
+                            <p class="form-field">
+                            <label class="form-label" for="comment">Комментарий</label> 
+                            <textarea class="comment-input" name="comment" id="comment" rows="2" placeholder="Введите текст"></textarea>
+                            </p>                           
 
-                            <label for="email">Почта</label> 
-                            <input type="email" name="email" id="email">
-
-                            <label for="comment">Комментарий</label> 
-                            <textarea name="comment" id="comment" rows="10"></textarea>
-
-                            <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
-                            <input type="checkbox" name="policy" id="policy">
-
-                            <button tipe="submitt">Отправить</button>
+                            <p class="form-field">
+                            <input class="form-input" type="checkbox" name="policy" id="policy">
+                            <label class="form-label" 
+                            for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> 
+                            </label>
+                        </p>
+                       
+                            <button class="button-modal" tipe="submitt">Отправить</button>
                         </form>
                     </div>
                 </div>

@@ -336,8 +336,8 @@ ul {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
     display: inline-block;
-    width: 528px;
-    height: 581px;
+    width: 530px;
+    height: 590px;
     background-color: white;
     border-radius: 5px;
 }
@@ -357,6 +357,110 @@ ul {
     width: 30px;
     height: 30px;
 }
+
+.close-modal:hover {
+   cursor: pointer;   
+}
+
+/* 
+---- modal form ------ */
+
+.form-modal {
+    outline: 1px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+} 
+
+.form-modal-title {
+    margin-bottom: 12px;
+
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.form-field {
+    outline: 1px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field label {
+    margin-bottom: 4px;
+}
+
+.form-input {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+}
+
+.comment-input {
+    margin: 0;
+    padding: 0;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-field input {
+    padding-left: 16px;
+}
+
+.form-field textarea {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* height: 120px; */
+}
+
+.form-field textarea::placeholder {
+    font-size: 12px;
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: normal;
+}
+
+.button-modal {
+    display: inline-block; 
+    background: var(--accent-link-color);
+    padding: 0; 
+   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: #FFFFFF; 
+    height: 50px;
+    min-width: 200px;
+}
+
+.button-modal:hover {
+    cursor: pointer;
+}
+
+
+
+
 
 h1 {
     font-weight: 900;
@@ -415,7 +519,6 @@ p {
     color: var(--h2-color);
     text-align: left;
     padding-bottom: 10px;
-
 }
 
 .feature-item::before {
