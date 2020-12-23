@@ -498,6 +498,7 @@ ul {
 .checkbox-label a {
     margin-left: 2px;
     text-decoration: none;
+    text-decoration: underline;
     color: var(--accent-link-color);
 }
 
