@@ -349,6 +349,7 @@ ul {
 ---- modal form ------ */
 
 .form-modal {
+    
     outline: 1px;
     margin-left: auto;
     margin-right: auto;
@@ -364,6 +365,10 @@ ul {
     color: #757575;
 } 
 
+.form-input:focus + .modal-svg {
+    fill: var(--accent-link-color);
+}
+
 .form-modal-title {
     margin-bottom: 12px;
 
@@ -376,6 +381,7 @@ ul {
 }
 
 .form-field {
+    position: relative;
     outline: 1px;
     margin-bottom: 10px;
     display: flex;
@@ -383,10 +389,11 @@ ul {
 }
 
 .form-field label {
-    margin-bottom: 4px;
+     margin-bottom: 4px;
 }
 
 .form-input {
+    position: relative;
     margin: 0;
     padding: 0;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -402,7 +409,7 @@ ul {
 }
 
 .form-field input {
-    padding-left: 16px;
+    padding-left: 40px;
 }
 
 .form-field textarea {
@@ -439,6 +446,14 @@ ul {
 
 .button-modal:hover {
     cursor: pointer;
+}
+
+.modal-svg {
+    position: absolute;
+    top: 40px;
+    margin-left: 10px;
+    fill: #212121;
+    vertical-align: middle;
 }
 
 
