@@ -1071,6 +1071,11 @@ min-width: 230px;
     min-width: 200px;
 }
 
+.subscribe-button-svg {
+    fill: white;
+    vertical-align: middle;
+}
+
 .footer-subscribe input {
     
     margin: 0;
