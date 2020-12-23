@@ -329,12 +329,12 @@ ul {
     position: absolute;
     right: 8px;
     top: 8px;
-    /* transform: translate(-50%, -50%); */
-    background: #FFFFFF;
+
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;     
+   
     border-radius: 50%;
-    background-image: url(./svg/close-modal.svg);
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center;
     width: 30px;
@@ -343,8 +343,17 @@ ul {
 
 .close-modal:hover {
    cursor: pointer;  
-   color: var(--accent-link-color);
+   fill: var(--accent-link-color);
+}
 
+.close-modal-svg {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    position: absolute;
+    top: 6px;
+    right: 5px;
 }
 
 /* 
