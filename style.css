@@ -282,6 +282,11 @@ ul {
     margin-top: 30px;
 }
 
+.to-order:hover,
+.to-order:focus {
+    cursor: pointer;
+}
+
 /* ---- modal ------ */
 
 .backdrop {
@@ -1159,6 +1164,11 @@ min-width: 230px;
     color: #FFFFFF; 
     height: 50px;
     min-width: 200px;
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    cursor: pointer;
 }
 
 .subscribe-button-svg {
