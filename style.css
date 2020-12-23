@@ -365,9 +365,19 @@ ul {
     color: #757575;
 } 
 
-.form-input:focus + .modal-svg {
+.form-input:focus ~ .modal-svg {
     fill: var(--accent-link-color);
 }
+
+.form-label + .form-input:focus {
+    border-color: green;  
+    background-color: yellow; 
+    cursor: pointer; 
+}
+
+/* .form-label + .form-input:not(placeholder-shown)  {
+    border-color: var(--accent-link-color);    
+} */
 
 .form-modal-title {
     margin-bottom: 12px;
@@ -393,6 +403,10 @@ ul {
 }
 
 .form-input {
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     position: relative;
     margin: 0;
     padding: 0;
@@ -449,6 +463,10 @@ ul {
 }
 
 .modal-svg {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     position: absolute;
     top: 40px;
     margin-left: 10px;
