@@ -371,7 +371,7 @@ ul {
 
 .form-label + .form-input:focus {
     border-color: var(--accent-link-color);  
-    background-color: yellow; 
+    background-color: ; 
     cursor: pointer; 
 }
 
@@ -400,6 +400,11 @@ ul {
 
 .form-field label {
      margin-bottom: 4px;
+     font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
 }
 
 .form-input {
@@ -432,7 +437,7 @@ ul {
     padding-top: 12px;
     padding-bottom: 12px;
     font-size: 16px;
-    /* height: 120px; */
+    height: 120px;
 }
 
 .form-field textarea::placeholder {
@@ -509,7 +514,7 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     position: absolute;
-    top: 40px;
+    top: 30px;
     margin-left: 10px;
     fill: #212121;
     vertical-align: middle;
