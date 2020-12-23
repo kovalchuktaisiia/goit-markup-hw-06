@@ -342,7 +342,9 @@ ul {
 }
 
 .close-modal:hover {
-   cursor: pointer;   
+   cursor: pointer;  
+   color: var(--accent-link-color);
+
 }
 
 /* 
